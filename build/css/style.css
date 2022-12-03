@@ -384,9 +384,26 @@ template {
   display: none;
 }
 
+.introduction__slogan,
 .page__body {
   font-family: "Montserrat", "Arial Narrow", sans-serif;
   font-weight: 400;
+}
+
+.advantages__card-subtitle,
+.navigation__link {
+  font-family: "Montserrat", "Arial Narrow", sans-serif;
+  font-weight: 500;
+}
+
+.page__section-subtitle {
+  font-family: "Montserrat", "Arial Narrow", sans-serif;
+  font-weight: 600;
+}
+
+.introduction__subtitle {
+  font-family: "Montserrat", "Arial Narrow", sans-serif;
+  font-weight: 700;
 }
 
 @font-face {
@@ -409,7 +426,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-display: swap;
 }
 
@@ -645,12 +662,11 @@ button,
 }
 
 .page {
-  height: 100%;
+  height: 100vh;
   word-break: break-word;
 }
 
 .page__body {
-  min-width: 320px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,7 +675,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 100vh;
   font-size: 16px;
   line-height: 24px;
   color: #011C40;
@@ -670,6 +686,296 @@ button,
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
+
+.page__section-subtitle {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.introduction {
+  background-color: #011C40;
+  background-image: url("../img/main-background.webp");
+  background-size: cover;
+  background-position: center;
+  margin-top: -83px;
+  padding: 273px 0 283px 198px;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  color: #f9fffd;
+}
+
+.introduction__subtitle {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 54px;
+  line-height: 66px;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.introduction__slogan {
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-header {
+  padding: 35px 103px 0;
+  z-index: 3;
+}
+
+.main-header__menu-button {
+  display: none;
+}
+
+.main-header__menu-button:hover {
+  opacity: 0.5;
+}
+
+.main-logo {
+  display: block;
+  margin-right: 40px;
+}
+
+.main-logo:hover {
+  opacity: 0.5;
+}
+
+.main-logo svg {
+  fill: #f9fffd;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__item {
+  margin-right: 33px;
+  margin-bottom: 10px;
+}
+
+.navigation__item:last-of-type {
+  margin-right: 0;
+}
+
+.navigation__link {
+  font-size: 16px;
+  line-height: 20px;
+  color: #f9fffd;
+}
+
+.navigation__link:hover {
+  opacity: 0.5;
+}
+
+.voyage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f9fffd;
+  color: #011C40;
+  padding: 120px 103px 145px;
+}
+
+.voyage__text-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-right: 88px;
+}
+
+.voyage__subtitle {
+  margin: 0;
+}
+
+.voyage__description {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.voyage__pinguins-image {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 560px;
+  height: 301px;
+  background-image: url("../img/pinguins.webp");
+  background-size: 120%;
+  background-position: 85%;
+  background-repeat: no-repeat;
+}
+
+.main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  background-color: #011C40;
+  padding: 50px 103px;
+}
+
+.main-footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer__social-item {
+  margin-right: 27px;
+}
+
+.main-footer__social-item:last-of-type {
+  margin-right: 0;
+}
+
+.main-footer__social-link:hover {
+  opacity: 0.5;
+}
+
+.main-footer__social-link svg {
+  fill: #f9fffd;
+}
+
+.advantages {
+  padding: 108px 103px 119px;
+  background-image: url("../img/advantages-background.webp");
+  background-position: center;
+  background-size: cover;
+  color: #011C40;
+}
+
+.advantages__subtitle {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.advantages__cards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.advantages__card {
+  padding: 30px 30px 45px 30px;
+  background-color: #f9fffd;
+}
+
+.advantages__card:hover {
+  background-color: #011C40;
+  color: #f9fffd;
+}
+
+.advantages__card svg {
+  fill: #011C40;
+  margin-bottom: 10px;
+}
+
+.advantages__card:hover svg {
+  fill: #f9fffd;
+}
+
+.advantages__card-subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.advantages__card-description {
+  max-width: 288px;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
 
 @media (max-width: 1439px) {
   .container {
@@ -683,8 +989,368 @@ button,
   }
 }
 
+@media (max-width: 1023.9px) {
+  .page__section-subtitle {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .introduction {
+    margin-top: -73px;
+    padding: 280px 0 275px 45px;
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .introduction__subtitle {
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 61px;
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .introduction__slogan {
+    font-size: 18px;
+    line-height: 22px;
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .main-header {
+    padding: 28px 45px 0;
+  }
+
+  .main-logo {
+    margin-right: 25px;
+  }
+
+  .main-logo svg {
+    width: 38px;
+    height: 20px;
+  }
+
+  .navigation__item {
+    margin-right: 24px;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .navigation__link--footer {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .voyage {
+    padding: 90px 50px 95px 45px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .voyage__text-wrapper {
+    margin-right: 25px;
+  }
+
+  .voyage__subtitle {
+    margin: 0;
+    margin-top: 0;
+    line-height: 36px;
+  }
+
+  .voyage__description {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .voyage__pinguins-image {
+    margin-top: 10px;
+    width: 324px;
+    height: 174px;
+  }
+
+  .main-footer {
+    padding: 50px 45px;
+  }
+
+  .main-footer__social-item {
+    margin-right: 22px;
+  }
+
+  .main-footer__social-link svg {
+    -webkit-transform: scale(80%);
+    -ms-transform: scale(80%);
+    transform: scale(80%);
+  }
+
+  .advantages {
+    padding: 90px 45px 98px;
+  }
+
+  .advantages__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .advantages__cards {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .advantages__card {
+    padding: 20px 16px 20px 20px;
+  }
+
+  .advantages__card svg {
+    -webkit-transform: scale(0.813);
+    -ms-transform: scale(0.813);
+    transform: scale(0.813);
+    margin-bottom: 12px;
+  }
+
+  .advantages__card-subtitle {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding: 0 16px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .page__section-subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .introduction {
+    margin-top: -49px;
+    padding: 175px 0 177px 15px;
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 47% 23%;
+  }
+
+  .introduction__subtitle {
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .introduction__slogan {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .main-header--opened {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 43, 102, 0.5);
+    padding: 0;
+  }
+
+  .main-header--closed {
+    position: relative;
+    padding: 20px 15px 0;
+    background-color: transparent;
+  }
+
+  .main-header__menu-button {
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 14px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .main-header--opened button {
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/svg/close-button-icon.svg");
+  }
+
+  .main-header--closed button {
+    width: 26px;
+    height: 14px;
+    background-image: url("../img/svg/hamburger-icon.svg");
+  }
+
+  .main-header--opened ~ .page__main-container .introduction {
+    padding-bottom: 225px;
+  }
+
+  .main-logo svg {
+    width: 42px;
+    height: 22px;
+  }
+
+  .main-logo--footer {
+    margin-bottom: 20px;
+  }
+
+  .navigation--opened {
+    position: relative;
+    margin-left: 35px;
+    background-color: #f9fffd;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    min-height: 568px;
+    padding: 20px 0 0 15px;
+  }
+
+  .navigation--footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .navigation--opened .navigation__logo svg {
+    fill: #011C40;
+  }
+
+  .navigation--opened .navigation__link {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .navigation--opened .navigation__list {
+    margin-top: 35px;
+  }
+
+  .navigation--opened .navigation__item {
+    margin-bottom: 26px;
+    margin-left: 10px;
+  }
+
+  .navigation__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .navigation__list--footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .navigation--opened .navigation__link {
+    color: #011C40;
+  }
+
+  .navigation--closed {
+    margin-left: 0;
+    background-color: transparent;
+    min-height: none;
+    padding: 0;
+  }
+
+  .navigation--closed ul {
+    display: none;
+  }
+
+  .voyage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 55px 15px 85px;
+  }
+
+  .voyage__text-wrapper {
+    margin-right: 0;
+  }
+
+  .voyage__subtitle {
+    line-height: 34px;
+  }
+
+  .voyage__description {
+    margin-bottom: 45px;
+  }
+
+  .voyage__pinguins-image {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-top: 0;
+    width: 290px;
+    height: 156px;
+  }
+
+  .main-footer {
+    padding: 40px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .advantages {
+    padding: 55px 15px 65px;
+  }
+
+  .advantages__subtitle {
+    margin-bottom: 30px;
+  }
+
+  .advantages__cards {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    -ms-grid-rows: (1fr)[3];
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .advantages__card-subtitle {
+    max-width: 151px;
+  }
+
+  .advantages__card-description {
+    max-width: none;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .introduction {
+    background-image: url("../img/main-background@2x.webp");
+  }
+
+  .voyage__pinguins-image {
+    background-image: url("../img/pinguins@2x.webp");
   }
 }

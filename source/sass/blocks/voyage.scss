@@ -1,0 +1,91 @@
+.voyage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $ice-white;
+  color: $antarctic-blue;
+  padding: 120px 103px 145px;
+}
+
+.voyage__text-wrapper {
+  flex-grow: 1;
+  margin-right: 88px;
+}
+
+.voyage__subtitle {
+  margin: 0;
+}
+
+.voyage__description {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.voyage__pinguins-image {
+  flex-shrink: 0;
+  width: 560px;
+  height: 301px;
+  background-image: url("../img/pinguins.webp");
+  background-size: 120%;
+  background-position: 85%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/pinguins@2x.webp");
+  }
+}
+
+@media (max-width: 1023.9px) {
+  .voyage {
+    padding: 90px 50px 95px 45px;
+    align-items: flex-start;
+  }
+
+  .voyage__text-wrapper {
+    margin-right: 25px;
+  }
+
+  .voyage__subtitle {
+    margin: 0;
+    margin-top: 0;
+    line-height: 36px;
+  }
+
+  .voyage__description {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  .voyage__pinguins-image {
+    margin-top: 10px;
+    width: 324px;
+    height: 174px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .voyage {
+    flex-direction: column;
+    padding: 55px 15px 85px;
+  }
+
+  .voyage__text-wrapper {
+    margin-right: 0;
+  }
+
+  .voyage__subtitle {
+    line-height: 34px;
+  }
+
+  .voyage__description {
+    margin-bottom: 45px;
+  }
+
+  .voyage__pinguins-image {
+    align-self: center;
+    margin-top: 0;
+    width: 290px;
+    height: 156px;
+  }
+}
