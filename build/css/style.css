@@ -412,6 +412,7 @@ template {
   font-weight: 400;
 }
 
+.contacts__description,
 .contact-form__description,
 .cruise-card__parameters-name,
 .cruise-card__subtitle,
@@ -639,8 +640,8 @@ button,
 .rouble {
   font-family: "Rouble", "Arial", sans-serif;
   /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
+  text-transform: lowercase;
+  font-weight: 400;
   /* stylelint-enable */
 }
 
@@ -678,9 +679,9 @@ button,
 
 .no-transition {
   /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .container {
@@ -692,7 +693,7 @@ button,
 
 .page {
   height: 100vh;
-  word-break: break-word;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -1246,6 +1247,87 @@ button,
   line-height: 21px;
 }
 
+.contacts {
+  padding: 120px 103px 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contacts__text-wrapper {
+  margin-left: 20px;
+  max-width: 500px;
+  min-width: 230px;
+}
+
+.contacts__description {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  margin-bottom: 20px;
+}
+
+.contacts__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.contacts__item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 18px;
+  height: 22px;
+  background-image: url("../img/svg/pointer-icon.svg");
+  background-size: cover;
+  background-position: center;
+  fill: #011C40;
+}
+
+.contacts__item:last-of-type a::after {
+  height: 18px;
+  background-image: url("../img/svg/phone.svg");
+}
+
+.contacts__link {
+  display: block;
+  position: relative;
+  -webkit-columns: #011C40;
+  -moz-columns: #011C40;
+  columns: #011C40;
+  padding-left: 28px;
+}
+
+.contacts__link address {
+  font-style: normal;
+}
+
+.contacts__map {
+  display: block;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1290,6 +1372,21 @@ button,
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
+  }
+}
+
+@media (max-width: 1032.9px) {
+  .contacts {
+    padding: 100px 45px;
+  }
+
+  .contacts__map {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts__text-wrapper {
+    margin-left: 30px;
   }
 }
 
@@ -1383,11 +1480,11 @@ button,
   }
 
   .main-footer {
-    padding: 50px 45px;
+    padding: 47px 45px;
   }
 
   .main-footer__social-item {
-    margin-right: 22px;
+    margin-right: 18px;
   }
 
   .main-footer__social-link svg {
@@ -1561,7 +1658,7 @@ button,
   }
 
   .main-logo--footer {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   .navigation--opened {
@@ -1610,6 +1707,10 @@ button,
     margin-left: 10px;
   }
 
+  .navigation__item--footer {
+    margin-bottom: 8px;
+  }
+
   .navigation__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1625,7 +1726,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .navigation--opened .navigation__link {
@@ -1777,6 +1878,32 @@ button,
   .contact-form__checkbox-field:checked ~ .contact-form__checkbox-mark::after {
     top: 7px;
     left: 5px;
+  }
+
+  .contacts {
+    padding: 60px 15px 65px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .contacts__text-wrapper {
+    margin-left: 0;
+    margin-bottom: 35px;
+  }
+
+  .contacts__map {
+    width: 100%;
+    height: 316px;
+  }
+
+  .contacts__description {
+    margin-bottom: 27px;
+  }
+
+  .contacts__item a::after {
+    top: 3px;
   }
 }
 
