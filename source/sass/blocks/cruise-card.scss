@@ -1,0 +1,120 @@
+.cruise-card {
+  position: relative;
+  color: $ice-white;
+  display: flex;
+  flex-direction: column;
+  background-color: $antarctic-blue;
+  padding: 30px 25px 35px;
+  height: 386px;
+
+}
+
+.cruise-card::-webkit-scrollbar {
+  width: 0;
+}
+
+.cruise-card:hover {
+  overflow: scroll;
+}
+
+.cruise-card:hover .cruise-card__overlay {
+  z-index: -1;
+}
+
+.cruise-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-1.webp");
+  background-position: top 0  right 45%;
+  background-size: cover;
+}
+
+.cruise-card__overlay-subtitle {
+  position: absolute;
+  bottom: 25px;
+  left: 30px;
+  @extend %mont-500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $ice-white;
+}
+
+.cruise-card__subtitle {
+  margin: 0;
+  margin-bottom: 15px;
+  @extend %mont-500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $ice-white;
+}
+
+.cruise-card__parameters-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cruise-card__parameters-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.cruise-card__parameters-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.cruise-card__parameters-name {
+  display: block;
+  @extend %mont-500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-card__parameters-value {
+  display: block;
+  color: $cold-grey;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cruise-card__order-button {
+  width: 100%;
+  background-color: $ice-white;
+  justify-self: flex-end;
+  border: none;
+  @extend %mont-600;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.cruise-card__order-button:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1023.9px) {
+  .cruise-card {
+    padding: 30px 35px 35px;
+  }
+
+  .cruise-card__overlay-subtitle {
+    left: 35px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .cruise-card {
+    padding: 30px 25px 35px;
+  }
+
+  .cruise-card__overlay-subtitle {
+    left: 25px;
+    bottom: 18px;
+  }
+}

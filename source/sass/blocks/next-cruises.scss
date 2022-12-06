@@ -1,0 +1,39 @@
+.next-cruises {
+  padding: 90px 118px 120px;
+}
+
+.next-cruises__subtitle {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+.next-cruises__cards {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+@media (max-width: 1023.9px){
+  .next-cruises {
+    padding: 90px 60px 100px;
+  }
+}
+
+@media (max-width: 767.9px) {
+  .next-cruises {
+    padding: 60px 25px 65px;
+  }
+
+  .next-cruises__subtitle {
+    margin-bottom: 28px;
+  }
+
+  .next-cruises__cards {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
