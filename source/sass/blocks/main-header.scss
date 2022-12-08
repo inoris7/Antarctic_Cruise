@@ -64,7 +64,7 @@
     background-image: url("../img/svg/hamburger-icon.svg");
   }
 
-  .main-header--opened ~ .page__main-container .introduction {
+  .main-header--opened ~ .page__main-container .introduction__container {
     padding-bottom: 225px;
   }
 }

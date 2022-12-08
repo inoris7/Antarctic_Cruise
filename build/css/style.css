@@ -899,6 +899,7 @@ button,
 }
 
 .main-footer__social-list {
+  min-width: 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1507,6 +1508,10 @@ button,
     padding: 47px 45px;
   }
 
+  .main-footer__social-list {
+    min-width: unset;
+  }
+
   .main-footer__social-item {
     margin-right: 18px;
   }
@@ -1691,7 +1696,7 @@ button,
     background-image: url("../img/svg/hamburger-icon.svg");
   }
 
-  .main-header--opened ~ .page__main-container .introduction {
+  .main-header--opened ~ .page__main-container .introduction__container {
     padding-bottom: 225px;
   }
 
