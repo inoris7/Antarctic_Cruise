@@ -11,6 +11,10 @@
     <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../img/main-background.webp" as="image/webp" crossorigin="anonymous">
+    <link rel="preload" href="../img/main-background@2x.webp" as="image/webp" crossorigin="anonymous">
+    <link rel="preload" href="../img/main-background-mobile.webp" as="image/webp" crossorigin="anonymous">
+    <link rel="preload" href="../img/main-background-mobile@2x.webp" as="image/webp" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./img/svg/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.min.css">
@@ -20,6 +24,7 @@
       <header class="main-header main-header--opened">
         <nav class="main-header__nav navigation navigation--opened">
           <a class="navigation__logo main-logo" href="#">
+            <span class="visually-hidden">Логотип Арктических круизов</span>
             <svg width="70" height="38">
               <use href="./img/sprite.svg#main-icon"></use>
             </svg>
@@ -39,72 +44,81 @@
             </li>
           </ul>
         </nav>
-        <button class="main-header__menu-button"></button>
+        <button class="main-header__menu-button">
+          <span class="visually-hidden">Кнопка меню</span>
+        </button>
       </header>
+
       <main class="page__main-container">
         <section class="introduction">
-          <h1 class="introduction__subtitle">Круизы в&nbsp;Антарктику</h1>
-          <span class="introduction__slogan">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</span>
+          <div class="introduction__container">
+            <h1 class="introduction__subtitle">Круизы в&nbsp;Антарктику</h1>
+            <span class="introduction__slogan">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</span>
+          </div>
         </section>
 
         <section class="voyage">
-          <div class="voyage__text-wrapper">
-            <h2 class="voyage__subtitle page__section-subtitle">
-              Путешествие на&nbsp;край&nbsp;Земли
-            </h2>
-            <p class="voyage__description">
-              Это волшебное путешествие
-              поможет вам познакомиться поближе
-              с&nbsp;удивительным миром Антарктики.
-              Наш круизный лайнер отвезет вас
-              на&nbsp;край Земли, где&nbsp;вы сможете
-              увидеть: ледяные айсберги, несколько видов
-              пингвинов, китов, морских котиков и&nbsp;многое другое.
-            </p>
+          <div class="voyage__container">
+            <div class="voyage__text-wrapper">
+              <h2 class="voyage__subtitle page__section-subtitle">
+                Путешествие на&nbsp;край&nbsp;Земли
+              </h2>
+              <p class="voyage__description">
+                Это волшебное путешествие
+                поможет вам познакомиться поближе
+                с&nbsp;удивительным миром Антарктики.
+                Наш круизный лайнер отвезет вас
+                на&nbsp;край Земли, где&nbsp;вы сможете
+                увидеть: ледяные айсберги, несколько видов
+                пингвинов, китов, морских котиков и&nbsp;многое другое.
+              </p>
+            </div>
+            <div class="voyage__pinguins-image"></div>
           </div>
-          <div class="voyage__pinguins-image"></div>
         </section>
 
         <section id="advantages" class="advantages">
-          <h2 class="advantages__subtitle page__section-subtitle">
-            Преимущества
-          </h2>
-          <ul class="advantages__cards">
-            <li class="advantages__card">
-              <svg width="27" height="32">
-                <use href="../img/sprite.svg#liner-icon"></use>
-              </svg>
-              <h3 class="advantages__card-subtitle">Небольшой круизный&nbsp;лайнер</h3>
-              <p class="advantages__card-description">
-                Круизный лайнер, рассчитанный всего
-                лишь на&nbsp;300 гостей, поможет избежать
-                шума и&nbsp;очередей и&nbsp;даст возможность
-                насладиться видами и&nbsp;природой.
-              </p>
-            </li>
-            <li class="advantages__card">
-              <svg width="38" height="32">
-                <use href="../img/sprite.svg#all-inclusive-icon"></use>
-              </svg>
-              <h3 class="advantages__card-subtitle">Система все&nbsp;включено</h3>
-              <p class="advantages__card-description">
-                Все наши круизы работают по&nbsp;системе
-                “Все Включено”. Великолепные блюда
-                и&nbsp;безлимитный бар доступны для&nbsp;вас 24 часа.
-              </p>
-            </li>
-            <li class="advantages__card">
-              <svg width="44" height="32">
-                <use href="../img/sprite.svg#zodiac-icon"></use>
-              </svg>
-              <h3 class="advantages__card-subtitle">Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
-              <p class="advantages__card-description">
-                Экскурсионные туры к&nbsp;берегам
-                Антарктиды совершаются на&nbsp;оборудованных
-                лодках типа Zodiack c&nbsp;опытными экскурсоводами.
-              </p>
-            </li>
-          </ul>
+          <div class="advantages__container">
+            <h2 class="advantages__subtitle page__section-subtitle">
+              Преимущества
+            </h2>
+            <ul class="advantages__cards">
+              <li class="advantages__card">
+                <svg width="27" height="32">
+                  <use href="../img/sprite.svg#liner-icon"></use>
+                </svg>
+                <h3 class="advantages__card-subtitle">Небольшой круизный&nbsp;лайнер</h3>
+                <p class="advantages__card-description">
+                  Круизный лайнер, рассчитанный всего
+                  лишь на&nbsp;300 гостей, поможет избежать
+                  шума и&nbsp;очередей и&nbsp;даст возможность
+                  насладиться видами и&nbsp;природой.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <svg width="38" height="32">
+                  <use href="../img/sprite.svg#all-inclusive-icon"></use>
+                </svg>
+                <h3 class="advantages__card-subtitle">Система все&nbsp;включено</h3>
+                <p class="advantages__card-description">
+                  Все наши круизы работают по&nbsp;системе
+                  “Все Включено”. Великолепные блюда
+                  и&nbsp;безлимитный бар доступны для&nbsp;вас 24 часа.
+                </p>
+              </li>
+              <li class="advantages__card">
+                <svg width="44" height="32">
+                  <use href="../img/sprite.svg#zodiac-icon"></use>
+                </svg>
+                <h3 class="advantages__card-subtitle">Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
+                <p class="advantages__card-description">
+                  Экскурсионные туры к&nbsp;берегам
+                  Антарктиды совершаются на&nbsp;оборудованных
+                  лодках типа Zodiack c&nbsp;опытными экскурсоводами.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="next-cruises">
@@ -350,45 +364,47 @@
         </section>
 
         <section class="early-booking">
-          <div class="early-booking__text-wrapper">
-            <h2 class="early-booking__subtitle">
-              Раннее бронирование
-            </h2>
-            <p class="early-booking__description">
-              Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты
-              выезда и&nbsp;сэкономьте до&nbsp;50%
-            </p>
+          <div class="early-booking__container">
+            <div class="early-booking__text-wrapper">
+              <h2 class="early-booking__subtitle">
+                Раннее бронирование
+              </h2>
+              <p class="early-booking__description">
+                Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты
+                выезда и&nbsp;сэкономьте до&nbsp;50%
+              </p>
+            </div>
+
+            <form class="early-booking__form contact-form" action="#" method="post">
+              <p class="contact-form__description">
+                Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+              </p>
+              <fieldset class="contact-form__fields">
+                <label>
+                  <span class="visually-hidden">Поле имя</span>
+                  <input type="text" name="customer-name" placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ ]+" minlength="2" required>
+                </label>
+
+                <label>
+                  <span class="visually-hidden">Поле телефон</span>
+                  <input type="tel" name="phone-number" placeholder="Телефон" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" minlength="10" required>
+                </label>
+
+                <label>
+                  <span class="visually-hidden">Поле Email</span>
+                  <input type="email" name="customer-email" placeholder="Email" minlength="4" pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" required>
+                </label>
+              </fieldset>
+              <label class="contact-form__checkbox">
+                <input class="visually-hidden contact-form__checkbox-field" type="checkbox" name="personal-data" checked required>
+                <span class="contact-form__checkbox-mark"></span>
+                <span class="contact-form__checkbox-description">Я согласен на обработку моих&nbsp;персональных данных</span>
+              </label>
+              <button class="contact-form__submit-button">
+                Оставить заявку
+              </button>
+            </form>
           </div>
-
-          <form class="early-booking__form contact-form" action="#" method="post">
-            <p class="contact-form__description">
-              Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
-            </p>
-            <fieldset class="contact-form__fields">
-              <label>
-                <span class="visually-hidden">Поле имя</span>
-                <input type="text" name="customer-name" placeholder="Имя" pattern="[a-zA-Zа-яА-ЯёЁ ]+" minlength="2" required>
-              </label>
-
-              <label>
-                <span class="visually-hidden">Поле телефон</span>
-                <input type="tel" name="phone-number" placeholder="Телефон" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" minlength="10" required>
-              </label>
-
-              <label>
-                <span class="visually-hidden">Поле Email</span>
-                <input type="email" name="customer-email" placeholder="Email" minlength="4" pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" required>
-              </label>
-            </fieldset>
-            <label class="contact-form__checkbox">
-              <input class="visually-hidden contact-form__checkbox-field" type="checkbox" name="personal-data" checked required>
-              <span class="contact-form__checkbox-mark"></span>
-              <span class="contact-form__checkbox-description">Я согласен на обработку моих&nbsp;персональных данных</span>
-            </label>
-            <button class="contact-form__submit-button">
-              Оставить заявку
-            </button>
-          </form>
         </section>
 
         <section id="contacts" class="contacts">
@@ -413,9 +429,10 @@
             </ul>
           </div>
 
-          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1670317406884!5m2!1sru!2str/MAP_MODE?key=YOUR_API_KEY&PARAMETERS"
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1670317406884!5m2!1sru!2str"
           width="560"
           height="306"
+          title="Расположение офиса Арктических круизов на карте"
           style="border:0;"
           allowfullscreen=""
           loading="lazy"
@@ -425,50 +442,56 @@
     </main>
 
     <footer class="main-footer">
-      <nav class="main-footer__nav navigation navigation--footer">
-        <a class="navigation__logo main-logo main-logo--footer" href="#">
-          <svg width="70" height="38">
-            <use href="./img/sprite.svg#main-icon"></use>
-          </svg>
-        </a>
-        <ul class="navigation__list navigation__list--footer">
-          <li class="navigation__item navigation__item--footer">
-            <a class="navigation__link navigation__link--footer" href="#">Преимущества </a>
+      <div class="main-footer__container">
+        <nav class="main-footer__nav navigation navigation--footer">
+          <a class="navigation__logo main-logo main-logo--footer" href="#">
+            <span class="visually-hidden">Логотип Арктических круизов</span>
+            <svg width="70" height="38">
+              <use href="./img/sprite.svg#main-icon"></use>
+            </svg>
+          </a>
+          <ul class="navigation__list navigation__list--footer">
+            <li class="navigation__item navigation__item--footer">
+              <a class="navigation__link navigation__link--footer" href="#">Преимущества </a>
+            </li>
+            <li class="navigation__item navigation__item--footer">
+              <a class="navigation__link navigation__link--footer" href="#">Направления</a>
+            </li>
+            <li class="navigation__item navigation__item--footer">
+              <a class="navigation__link navigation__link--footer" href="#">Ближайшие круизы</a>
+            </li>
+            <li class="navigation__item navigation__item--footer">
+              <a class="navigation__link navigation__link--footer" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
+              <span class="visually-hidden">Страничка в одноклассниках</span>
+              <svg width="12" height="20">
+                <use href="./img/sprite.svg#ok-icon"></use>
+              </svg>
+            </a>
           </li>
-          <li class="navigation__item navigation__item--footer">
-            <a class="navigation__link navigation__link--footer" href="#">Направления</a>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
+              <span class="visually-hidden">Страничка в дзен</span>
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#dzen-icon"></use>
+              </svg>
+            </a>
           </li>
-          <li class="navigation__item navigation__item--footer">
-            <a class="navigation__link navigation__link--footer" href="#">Ближайшие круизы</a>
-          </li>
-          <li class="navigation__item navigation__item--footer">
-            <a class="navigation__link navigation__link--footer" href="#">Контакты</a>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link" href="#">
+              <span class="visually-hidden">Страничка на реддит</span>
+              <svg width="20" height="20">
+                <use href="./img/sprite.svg#reddit-icon"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="main-footer__social-list">
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="#">
-            <svg width="12" height="20">
-              <use href="./img/sprite.svg#ok-icon"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="#">
-            <svg width="20" height="20">
-              <use href="./img/sprite.svg#dzen-icon"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link" href="#">
-            <svg width="20" height="20">
-              <use href="./img/sprite.svg#reddit-icon"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </footer>
     </div>
 

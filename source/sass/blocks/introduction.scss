@@ -4,13 +4,19 @@
   background-size: cover;
   background-position: center;
   margin-top: -83px;
-  padding: 273px 0 283px 198px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   color: $ice-white;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/main-background@2x.webp");
   }
+}
+
+.introduction__container {
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 273px 0 283px 198px;
 }
 
 .introduction__subtitle {
@@ -32,8 +38,11 @@
 @media (max-width: 1023.9px) {
   .introduction {
     margin-top: -73px;
-    padding: 280px 0 275px 45px;
     filter: none;
+  }
+
+  .introduction__container {
+    padding: 280px 0 275px 45px;
   }
 
   .introduction__subtitle {
@@ -53,10 +62,13 @@
 @media (max-width: 767.9px) {
   .introduction {
     margin-top: -49px;
-    padding: 175px 0 177px 15px;
     background-size: 250%;
     background-repeat: no-repeat;
     background-position: 47% 23%;
+  }
+
+  .introduction__container {
+    padding: 175px 0 177px 15px;
   }
 
   .introduction__subtitle {

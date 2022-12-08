@@ -1,9 +1,15 @@
 .main-footer {
+  background-color: $antarctic-blue;
+  flex: 0 0 auto;
+}
+
+.main-footer__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex: 0 0 auto;
-  background-color: $antarctic-blue;
   padding: 50px 103px;
 }
 
@@ -32,7 +38,7 @@
 }
 
 @media (max-width: 1023.9px) {
-  .main-footer {
+  .main-footer__container {
     padding: 47px 45px;
   }
 
@@ -46,7 +52,7 @@
 }
 
 @media (max-width: 767.9px) {
-  .main-footer {
+  .main-footer__container {
     padding: 40px 15px;
     flex-direction: column;
     align-items: flex-start;

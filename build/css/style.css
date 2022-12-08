@@ -729,10 +729,16 @@ button,
   background-size: cover;
   background-position: center;
   margin-top: -83px;
-  padding: 273px 0 283px 198px;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   color: #f9fffd;
+}
+
+.introduction__container {
+  max-width: 1366px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 273px 0 283px 198px;
 }
 
 .introduction__subtitle {
@@ -754,6 +760,10 @@ button,
 .main-header {
   padding: 35px 103px 0;
   z-index: 3;
+  width: 100%;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-header__menu-button {
@@ -820,6 +830,11 @@ button,
 }
 
 .voyage {
+  background-color: #f9fffd;
+  color: #011C40;
+}
+
+.voyage__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,9 +844,10 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #f9fffd;
-  color: #011C40;
   padding: 120px 103px 145px;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .voyage__text-wrapper {
@@ -863,6 +879,16 @@ button,
 }
 
 .main-footer {
+  background-color: #011C40;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.main-footer__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,10 +898,6 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  background-color: #011C40;
   padding: 50px 103px;
 }
 
@@ -907,11 +929,17 @@ button,
 }
 
 .advantages {
-  padding: 108px 103px 119px;
   background-image: url("../img/advantages-background.webp");
   background-position: center;
   background-size: cover;
   color: #011C40;
+}
+
+.advantages__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 108px 103px 119px;
 }
 
 .advantages__subtitle {
@@ -968,6 +996,9 @@ button,
 }
 
 .next-cruises {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 90px 118px 120px;
 }
 
@@ -1098,6 +1129,15 @@ button,
 }
 
 .early-booking {
+  background-image: url("../img/early-booking-background.webp");
+  background-size: cover;
+  color: #011C40;
+}
+
+.early-booking__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1108,9 +1148,6 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 50px 163px 45px;
-  background-image: url("../img/early-booking-background.webp");
-  background-size: cover;
-  color: #011C40;
 }
 
 .early-booking__text-wrapper {
@@ -1248,6 +1285,9 @@ button,
 }
 
 .contacts {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 120px 103px 125px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1404,9 +1444,12 @@ button,
 
   .introduction {
     margin-top: -73px;
-    padding: 280px 0 275px 45px;
     -webkit-filter: none;
     filter: none;
+  }
+
+  .introduction__container {
+    padding: 280px 0 275px 45px;
   }
 
   .introduction__subtitle {
@@ -1451,7 +1494,7 @@ button,
     line-height: 15px;
   }
 
-  .voyage {
+  .voyage__container {
     padding: 90px 50px 95px 45px;
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -1479,7 +1522,7 @@ button,
     height: 174px;
   }
 
-  .main-footer {
+  .main-footer__container {
     padding: 47px 45px;
   }
 
@@ -1493,7 +1536,7 @@ button,
     transform: scale(80%);
   }
 
-  .advantages {
+  .advantages__container {
     padding: 90px 45px 98px;
   }
 
@@ -1536,12 +1579,15 @@ button,
   }
 
   .early-booking {
+    background-position: right;
+  }
+
+  .early-booking__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 90px 174px 99px;
-    background-position: right;
   }
 
   .early-booking__text-wrapper {
@@ -1590,10 +1636,13 @@ button,
 
   .introduction {
     margin-top: -49px;
-    padding: 175px 0 177px 15px;
     background-size: 250%;
     background-repeat: no-repeat;
     background-position: 47% 23%;
+  }
+
+  .introduction__container {
+    padding: 175px 0 177px 15px;
   }
 
   .introduction__subtitle {
@@ -1744,7 +1793,7 @@ button,
     display: none;
   }
 
-  .voyage {
+  .voyage__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1773,7 +1822,7 @@ button,
     height: 156px;
   }
 
-  .main-footer {
+  .main-footer__container {
     padding: 40px 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1784,7 +1833,7 @@ button,
     align-items: flex-start;
   }
 
-  .advantages {
+  .advantages__container {
     padding: 55px 15px 65px;
   }
 
@@ -1828,9 +1877,8 @@ button,
     bottom: 18px;
   }
 
-  .early-booking {
+  .early-booking__container {
     padding: 60px 15px 65px;
-    background-position: right;
   }
 
   .early-booking__text-wrapper {

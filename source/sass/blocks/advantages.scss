@@ -1,9 +1,15 @@
 .advantages {
-  padding: 108px 103px 119px;
   background-image: url("../img/advantages-background.webp");
   background-position: center;
   background-size: cover;
   color: $antarctic-blue;
+}
+
+.advantages__container {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 108px 103px 119px;
 }
 
 .advantages__subtitle {
@@ -57,7 +63,7 @@
 }
 
 @media (max-width: 1023.9px) {
-  .advantages {
+  .advantages__container {
     padding: 90px 45px 98px;
   }
 
@@ -85,7 +91,7 @@
 }
 
 @media (max-width: 767.9px) {
-  .advantages {
+  .advantages__container {
     padding: 55px 15px 65px;
   }
 
