@@ -14,8 +14,9 @@
 }
 
 .voyage__text-wrapper {
-  flex-grow: 1;
+  max-width: 512px;
   margin-right: 88px;
+  flex-shrink: 1;
 }
 
 .voyage__subtitle {
@@ -29,17 +30,9 @@
 }
 
 .voyage__pinguins-image {
-  flex-shrink: 0;
-  width: 560px;
-  height: 301px;
-  background-image: url("../img/pinguins.webp");
-  background-size: 120%;
-  background-position: 85%;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/pinguins@2x.webp");
-  }
+  display: block;
+  flex-grow: 2;
+  min-width: 450px;
 }
 
 @media (max-width: 1023.9px) {
@@ -65,8 +58,7 @@
 
   .voyage__pinguins-image {
     margin-top: 10px;
-    width: 324px;
-    height: 174px;
+    min-width: 324px;
   }
 }
 
@@ -74,10 +66,13 @@
   .voyage__container {
     flex-direction: column;
     padding: 55px 15px 85px;
+    align-items: center;
   }
 
   .voyage__text-wrapper {
     margin-right: 0;
+    align-self: flex-start;
+    max-width: none;
   }
 
   .voyage__subtitle {
@@ -89,9 +84,7 @@
   }
 
   .voyage__pinguins-image {
-    align-self: center;
     margin-top: 0;
-    width: 290px;
-    height: 156px;
+    min-width: 290px;
   }
 }

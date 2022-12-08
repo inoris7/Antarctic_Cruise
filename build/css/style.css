@@ -851,10 +851,10 @@ button,
 }
 
 .voyage__text-wrapper {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  max-width: 512px;
   margin-right: 88px;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 
 .voyage__subtitle {
@@ -868,14 +868,11 @@ button,
 }
 
 .voyage__pinguins-image {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 560px;
-  height: 301px;
-  background-image: url("../img/pinguins.webp");
-  background-size: 120%;
-  background-position: 85%;
-  background-repeat: no-repeat;
+  display: block;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  min-width: 450px;
 }
 
 .main-footer {
@@ -1415,21 +1412,6 @@ button,
   }
 }
 
-@media (max-width: 1032.9px) {
-  .contacts {
-    padding: 100px 45px;
-  }
-
-  .contacts__map {
-    width: 324px;
-    height: 335px;
-  }
-
-  .contacts__text-wrapper {
-    margin-left: 30px;
-  }
-}
-
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1518,8 +1500,7 @@ button,
 
   .voyage__pinguins-image {
     margin-top: 10px;
-    width: 324px;
-    height: 174px;
+    min-width: 324px;
   }
 
   .main-footer__container {
@@ -1619,6 +1600,19 @@ button,
 
   .contact-form__submit-button {
     padding: 11px 0;
+  }
+
+  .contacts {
+    padding: 100px 45px;
+  }
+
+  .contacts__map {
+    width: 324px;
+    height: 335px;
+  }
+
+  .contacts__text-wrapper {
+    margin-left: 30px;
   }
 }
 
@@ -1799,10 +1793,16 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 55px 15px 85px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .voyage__text-wrapper {
     margin-right: 0;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    max-width: none;
   }
 
   .voyage__subtitle {
@@ -1814,12 +1814,8 @@ button,
   }
 
   .voyage__pinguins-image {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
     margin-top: 0;
-    width: 290px;
-    height: 156px;
+    min-width: 290px;
   }
 
   .main-footer__container {
@@ -1958,10 +1954,6 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .introduction {
     background-image: url("../img/main-background@2x.webp");
-  }
-
-  .voyage__pinguins-image {
-    background-image: url("../img/pinguins@2x.webp");
   }
 
   .early-booking {

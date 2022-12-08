@@ -73,7 +73,12 @@
                 пингвинов, китов, морских котиков и&nbsp;многое другое.
               </p>
             </div>
-            <div class="voyage__pinguins-image"></div>
+
+            <picture>
+              <source media="(max-width: 767.9px)" srcset="img/pinguins-mobile.webp 1x, img/pinguins-mobile@2x.webp 2x">
+              <source media="(max-width: 1023.9px)" srcset="img/pinguins-tablet.webp 1x, img/pinguins-tablet@2x.webp 2x">
+              <img class="voyage__pinguins-image" width="560" height="301" src="img/pinguins-desktop.webp" srcset="img/pinguins-desktop@2x.webp 2x"
+            </picture>
           </div>
         </section>
 
