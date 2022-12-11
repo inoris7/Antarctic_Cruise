@@ -56,8 +56,14 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    min-height: 568px;
+    height: 568px;
     padding: 20px 0 0 15px;
+    overflow: scroll;
+
+  }
+
+  .navigation--opened::-webkit-scrollbar {
+    width: 0;
   }
 
   .navigation--footer {

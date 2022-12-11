@@ -128,7 +128,9 @@
   }
 
   .contact-form__checkbox-field:checked ~ .contact-form__checkbox-mark::after {
-    top: 7px;
-    left: 5px;
+    top: 6px;
+    left: 4px;
+    width: 12px;
+  height: 8px;
   }
 }

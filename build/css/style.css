@@ -1723,8 +1723,13 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    min-height: 568px;
+    height: 568px;
     padding: 20px 0 0 15px;
+    overflow: scroll;
+  }
+
+  .navigation--opened::-webkit-scrollbar {
+    width: 0;
   }
 
   .navigation--footer {
@@ -1925,8 +1930,10 @@ button,
   }
 
   .contact-form__checkbox-field:checked ~ .contact-form__checkbox-mark::after {
-    top: 7px;
-    left: 5px;
+    top: 6px;
+    left: 4px;
+    width: 12px;
+    height: 8px;
   }
 
   .contacts {
