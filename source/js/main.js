@@ -1,7 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import './modules/toggle-header-menu';
-import './modules/set-background-cruise-cards';
 
 // ---------------------------------
 
