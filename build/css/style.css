@@ -1047,51 +1047,51 @@ button,
 }
 
 .cruise-card__overlay--1 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-1.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-1.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-1.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-1.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-1.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-1.webp");
 }
 
 .cruise-card__overlay--2 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-2.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-2.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-2.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-2.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-2.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-2.webp");
 }
 
 .cruise-card__overlay--3 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-3.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-3.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-3.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-3.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-3.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-3.webp");
 }
 
 .cruise-card__overlay--4 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-4.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-4.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-4.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-4.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-4.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-4.webp");
 }
 
 .cruise-card__overlay--5 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-5.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-5.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-5.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-5.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-5.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-5.webp");
 }
 
 .cruise-card__overlay--6 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-6.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-6.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-6.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-6.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-6.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-6.webp");
 }
 
 .cruise-card__overlay--7 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-7.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-7.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-7.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-7.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-7.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-7.webp");
 }
 
 .cruise-card__overlay--8 {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-8.webp");
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-8.webp");
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-8.webp");
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-8.webp");
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-8.webp");
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-8.webp");
 }
 
 .cruise-card__overlay {
@@ -2014,51 +2014,51 @@ button,
   }
 
   .cruise-card__overlay--1 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-1@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-1@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-1@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-1@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-1@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-1@2x.webp");
   }
 
   .cruise-card__overlay--2 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-2@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-2@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-2@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-2@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-2@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-2@2x.webp");
   }
 
   .cruise-card__overlay--3 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-3@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-3@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-3@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-3@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-3@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-3@2x.webp");
   }
 
   .cruise-card__overlay--4 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-4@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-4@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-4@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-4@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-4@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-4@2x.webp");
   }
 
   .cruise-card__overlay--5 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-5@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-5@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-5@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-5@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-5@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-5@2x.webp");
   }
 
   .cruise-card__overlay--6 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-6@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-6@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-6@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-6@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-6@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-6@2x.webp");
   }
 
   .cruise-card__overlay--7 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-7@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-7@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-7@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-7@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-7@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-7@2x.webp");
   }
 
   .cruise-card__overlay--8 {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("./img/cruise-card-8@2x.webp");
-    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-8@2x.webp");
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("./img/cruise-card-8@2x.webp");
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40)), url("../img/cruise-card-8@2x.webp");
+    background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-8@2x.webp");
+    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%), url("../img/cruise-card-8@2x.webp");
   }
 
   .cruise-card__overlay {
