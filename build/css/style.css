@@ -1796,14 +1796,12 @@ button,
   }
 
   .main-header--opened {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 43, 102, 0.5);
-    padding: 0;
-    z-index: 3;
   }
 
   .main-header--closed {

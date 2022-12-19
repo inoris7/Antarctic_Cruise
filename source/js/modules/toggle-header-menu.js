@@ -12,9 +12,13 @@ if (mainHeader && navigationMenu && menuToggleButton) {
   navigationMenu.classList.add('navigation--closed');
 
   mainHeader.addEventListener('click', (evt) => {
-    if (evt.target.className === 'main-header') {
+    if (evt.target.id === 'main-header') {
       evt.stopPropagation();
-      console.log('click');
+      mainHeader.classList.remove('main-header--opened');
+      navigationMenu.classList.remove('navigation--opened');
+      mainHeader.classList.add('main-header--closed');
+      navigationMenu.classList.add('navigation--closed');
+      body.classList.remove('page__body--menu-opened');
     }
   });
 
