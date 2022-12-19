@@ -1,10 +1,13 @@
 .main-header {
+  position: absolute;
+  top: 0;
   padding: 35px 103px 0;
   z-index: 3;
   width: 100%;
   max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .main-header__menu-button {
@@ -17,7 +20,7 @@
 
 @media (max-width: 1023.9px) {
   .main-header {
-    padding: 28px 45px 0;
+    padding: 25px 45px 0;
   }
 }
 
@@ -27,22 +30,23 @@
     top: 0;
     right: 0;
     width: 100%;
+    height: 100%;
     background-color: rgba(0, 43, 102, 0.5);
     padding: 0;
+    z-index: 3;
   }
 
   .main-header--closed {
-    position:relative;
+    position:absolute;
     padding: 20px 15px 0;
     background-color: transparent;
-
   }
 
   .main-header__menu-button {
     display: block;
     position: absolute;
-    top: 24px;
-    right: 14px;
+    top: 14px;
+    right: 5px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,18 +57,23 @@
   }
 
   .main-header--opened button {
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
+    top: 16px;
+    right: 7px;
     background-image: url("../img/svg/close-button-icon.svg");
+    background-size: 15px 15px;
   }
 
   .main-header--closed button {
-    width: 26px;
-    height: 14px;
+    width: 46px;
+    height: 34px;
     background-image: url("../img/svg/hamburger-icon.svg");
+    background-size: 26px 14px;
   }
 
   .main-header--opened ~ .page__main-container .introduction__container {
     padding-bottom: 225px;
   }
+
 }

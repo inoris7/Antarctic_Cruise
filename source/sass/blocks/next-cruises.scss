@@ -25,6 +25,10 @@
   .next-cruises {
     padding: 90px 60px 100px;
   }
+
+  .next-cruises__cards {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+  }
 }
 
 @media (max-width: 767.9px) {
@@ -37,6 +41,6 @@
   }
 
   .next-cruises__cards {
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-template-columns: repeat(1, minmax(270px, 1fr));
   }
 }

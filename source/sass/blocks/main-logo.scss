@@ -11,6 +11,12 @@
   fill: $ice-white;
 }
 
+@media (max-width: 1046.9px) {
+  .main-logo--footer {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 1023.9px) {
   .main-logo {
     margin-right: 25px;

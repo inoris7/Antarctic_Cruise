@@ -15,6 +15,11 @@
   background-color: $ice-white;
 }
 
+.page__body--menu-opened {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .page__main-container {
   flex: 1 0 auto;
 }

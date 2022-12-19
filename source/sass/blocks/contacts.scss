@@ -38,7 +38,7 @@
   }
 }
 
-.contacts__item a::after {
+.contacts__link--address::after {
   content: "";
   position: absolute;
   top: 0;
@@ -51,13 +51,22 @@
   fill: $antarctic-blue;
 }
 
-.contacts__item:last-of-type a::after {
+.contacts__link--phone::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 18px;
   height: 18px;
   background-image: url("../img/svg/phone.svg");
+  background-size: cover;
+  background-position: center;
+  fill: $antarctic-blue;
 }
 
 
 .contacts__link {
+  width: fit-content;
   display: block;
   position: relative;
   columns: $antarctic-blue;
@@ -84,13 +93,14 @@
   }
 
   .contacts__text-wrapper {
+    margin-top: 27px;
     margin-left: 30px;
   }
 }
 
 @media (max-width: 767.9px) {
   .contacts {
-    padding: 60px 15px 65px;
+    padding: 35px 15px 65px;
     flex-direction: column;
   }
 
